@@ -1,26 +1,41 @@
-package com.mycompany.bangun_ruang;
+package com.mycompany.bangun_datar;
 public class Main {
+      public static void main(String[] args) {
+        
+ 
+        BangunDatar bangunDatar = new BangunDatar();
+        
 
-    public static void main(String[] args) {
-    Bangun_Ruang bangunruang = new Bangun_Ruang();
-    
-    Bola bola = new Bola();
-    bola.r = 4;
-    bola.volume();
-    
-    Kubus kubus = new Kubus();
-    kubus.S = 6;
-    kubus.volume();
-    
-    Tabung tabung = new Tabung();
-    tabung.r = 21;
-    tabung.t = 34;
-    tabung.volume();
-    
-    LimasSegitiga limassegitiga = new LimasSegitiga();
-    limassegitiga.LA = 13;
-    limassegitiga.TL = 9;
-    limassegitiga.volume();
-    
+        Persegi persegi = new Persegi();
+        persegi.sisi = 2;
+        
+
+        Lingkaran lingkaran = new Lingkaran();
+        lingkaran.r = 22;
+        
+
+        PersegiPanjang persegiPanjang = new PersegiPanjang();
+        persegiPanjang.panjang = 8;
+        persegiPanjang.lebar = 4;
+        
+
+        Segitiga mSegitiga = new Segitiga();
+        mSegitiga.alas = 12;
+        mSegitiga.tinggi = 8;
+
+        bangunDatar.luas();
+        bangunDatar.keliling();
+        
+        persegi.luas();
+        persegi.keliling();
+        
+        lingkaran.luas();
+        lingkaran.keliling();
+        
+        persegiPanjang.luas();
+        persegiPanjang.keliling();
+        
+        mSegitiga.luas();
+        mSegitiga.keliling();
     }
-    }
+}
